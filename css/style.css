@@ -16,3 +16,18 @@ header {
   min-height: 100vh;
   width: 100vw;
 }
+
+.halfs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half .transparent {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.half {
+  width: 48%;
+  min-height: 98vh;
+  padding: 1rem;
+}
