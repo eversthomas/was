@@ -22,6 +22,7 @@ header {
 .halfs {
   display: flex;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .milk {
@@ -32,4 +33,6 @@ header {
   width: 48%;
   min-height: 98vh;
   padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
 }
