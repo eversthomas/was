@@ -16,7 +16,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .halfs {
