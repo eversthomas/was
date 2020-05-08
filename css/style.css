@@ -10,6 +10,8 @@ body {
   padding: 0;
 }
 
+/* header */
+
 header {
   background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/Meghalaya_Abode_of_the_Clouds_India_Nature_in_Laitmawsiang_Landscape.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -21,17 +23,68 @@ header {
 
 .halfs {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
 }
 
 .milk {
   background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
 }
 
 .half {
-  width: 48%;
+  width: 100%;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 5px;
 }
+
+@media screen and (min-width: 768px) {
+  .halfs {
+    flex-direction: row;
+  }
+  .half {
+    width: 48%;
+  }
+}
+
+  /* content */
+  
+  .content {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .content main, .content aside {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+    main {
+      width: 68%;
+    }
+    aside {
+      width: 28%;
+    }
+}
+  
+  /* footer */
+
+footer {
+  background: #666;
+  color: white;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
