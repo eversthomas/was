@@ -28,9 +28,16 @@ header {
   min-height: 75vh;
 }
 
+.halfs h1 {
+  margin: 0;
+}
+
 .milk {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .half {
